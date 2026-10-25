@@ -3,21 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Apps de Jluismp2023</title>
+<title>Apps de José Luis Macas Proaño</title>
+<meta name="description" content="Apps Android para topografía, suelos y obra civil, hechas por un ingeniero civil de Ecuador.">
+<link rel="icon" href="logo.png">
 <style>
-  :root { color-scheme: light dark; }
-  body { margin: 0; font: 16px/1.6 system-ui, "Segoe UI", Roboto, sans-serif; background: #06110f; color: #eefaf7; }
-  main { max-width: 640px; margin: 0 auto; padding: 48px 20px; }
-  a { color: #2fd1bd; }
-  li { margin: 8px 0; }
+  :root { color-scheme: dark; }
+  body { margin: 0; font: 16px/1.6 system-ui, "Segoe UI", Roboto, sans-serif; background: #081726; color: #eef4fa; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 56px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+  header img { width: 72px; height: 72px; border-radius: 50%; }
+  h1 { font-size: 1.5rem; margin: 0; }
+  header p { margin: 2px 0 0; color: #9fb4c8; }
+  .apps { display: grid; gap: 12px; }
+  .app { display: block; padding: 14px 16px; border: 1px solid #1d4466; border-radius: 12px; background: #0b1f33; color: inherit; text-decoration: none; }
+  .app:hover { border-color: #3fd0c9; }
+  .app strong { color: #3fd0c9; }
+  .app span { display: block; color: #b8c8d8; font-size: .95rem; }
+  .tag { display: inline-block; margin-left: 6px; padding: 0 8px; border-radius: 999px; font-size: .75rem; background: #e8641c; color: #fff; vertical-align: 2px; }
+  footer { margin-top: 32px; color: #7f95aa; font-size: .9rem; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Apps de Jluismp2023</h1>
-  <ul>
-    <li><a href="https://jluismp2023.github.io/notasya-descargas/">NotasYa</a>: notas rápidas para Android</li>
-  </ul>
+  <header>
+    <img src="logo.png" alt="">
+    <div>
+      <h1>José Luis Macas Proaño</h1>
+      <p>Ingeniero Civil · Apps Android para topografía, suelos y obra · Pasaje, El Oro, Ecuador</p>
+    </div>
+  </header>
+
+  <div class="apps">
+    <a class="app" href="https://play.google.com/store/apps/details?id=com.aegis.securepro.gsm">
+      <strong>Aegis Secure Pro</strong><span class="tag">Google Play</span>
+      <span>Llamadas, contactos e historial con bloqueo a tu medida.</span>
+    </a>
+    <a class="app" href="https://play.google.com/store/apps/details?id=com.jluismp.notasya">
+      <strong>NotasYa</strong><span class="tag">Google Play</span>
+      <span>Notas de colores, búsqueda rápida y modo oscuro.</span>
+    </a>
+    <a class="app" href="https://jluismp2023.github.io/astrotrack-descargas/">
+      <strong>AstroTrack</strong>
+      <span>Levantamientos con el GPS del celular: puntos UTM, áreas, DXF y PDF.</span>
+    </a>
+    <a class="app" href="https://jluismp2023.github.io/geonivel-descargas/">
+      <strong>GeoNivel Pro</strong>
+      <span>Libreta de nivelación: cotas, cierre con tolerancia, control de tubería y bordillos.</span>
+    </a>
+    <a class="app" href="https://jluismp2023.github.io/geosuelo-descargas/">
+      <strong>GeoSuelo</strong>
+      <span>Laboratorio de suelos: granulometría, Atterberg, SUCS y AASHTO.</span>
+    </a>
+    <a class="app" href="https://jluismp2023.github.io/calcing-descargas/">
+      <strong>CalcIng</strong>
+      <span>Calculadora estándar, científica y gráfica.</span>
+    </a>
+  </div>
+
+  <footer>Contacto: jluismp2023@gmail.com</footer>
 </main>
 </body>
 </html>
