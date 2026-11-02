@@ -1,8 +1,0 @@
-<!doctype html><meta charset="utf-8"><title>enviar</title><body>Enviando...<script>
-// Página auxiliar temporal: entrega la imagen a la ventana que la abrió.
-(async()=>{const f=new URLSearchParams(location.search).get('f');
-const b=await (await fetch(f,{cache:'no-store'})).blob();
-const dest=window.opener||(window.parent!==window?window.parent:null);
-const msg=()=>dest&&dest.postMessage({tipo:'img',nombre:f.split('/').pop(),blob:b},'*');
-msg(); setInterval(msg,1500); document.body.textContent='Lista: '+b.size;})();
-</script>
